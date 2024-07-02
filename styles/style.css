@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff; /* Cor do texto principal */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo do cabeçalho com transparência */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+}
+
+#featured-anime {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.anime-card {
+    flex: 1 1 calc(30% - 20px); /* Três animes por linha */
+    padding: 0.5em;
+    background: rgba(0, 0, 0, 0.4); /* Fundo com transparência */
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+.anime-card:hover {
+    transform: translateY(-5px); /* Efeito de levantamento ao passar o mouse */
+}
+
+.anime-card img {
+    width: 160px; /* Largura fixa de 160 pixels */
+    height: 280px; /* Altura fixa de 280 pixels */
+    border-radius: 5px;
+    object-fit: cover; /* Redimensionamento da imagem para cobrir o espaço */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo do rodapé com transparência */
+    color: white;
+    border-top: 2px solid rgba(255, 255, 255, 0.1); /* Linha superior */
+}
